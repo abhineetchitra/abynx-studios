@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abynx Studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-label="Aria Vale logo">
+          <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="2"></circle>
+          <path d="M23 39c4-11 11-18 22-21-3 9-8 18-18 24-3 1-5 0-4-3Z" fill="currentColor"></path>
+        </svg>
+        <span>Abynx</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch color theme">
+          <span aria-hidden="true">☼</span>
+        </button>
+        <a class="btn btn-primary" href="contact.html">Book now</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container two-col">
+        <div class="panel hero-copy">
+          <div>
+            <span class="eyebrow">About page</span>
+            <h1 class="display">The artist story, practice, and selected milestones.</h1>
+            <p class="lead">
+              About pages work best when they explain the artist clearly without overwhelming the visitor, so this version keeps the writing focused and visual.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Artist portrait in a warm natural-light setting" width="1200" height="1000" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <article class="card">
+          <h2 class="section-title">Artist bio</h2>
+          <p class="section-subtitle">
+            Abynx is an independent artist blending alt-pop songwriting, ambient score work, and visual storytelling. Her projects move between studio releases, live sessions, stage direction, and collaborative audiovisual concepts.
+          </p>
+          <ul class="list" style="margin-top:1rem;">
+            <li>Based in New Delhi with remote collaborations across Europe and Southeast Asia.</li>
+            <li>Works across singles, film cues, visual campaigns, and live arrangements.</li>
+            <li>Available for booking, soundtrack work, and creative direction projects.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="section-title">Milestones</h2>
+          <ul class="list" style="margin-top:1rem;">
+            <li><div class="release-row"><span><strong>2026</strong><br><span class="muted">Released Afterlight and launched new live session visuals.</span></span></div></li>
+            <li><div class="release-row"><span><strong>2025</strong><br><span class="muted">Scored an installation film and completed two brand collaborations.</span></span></div></li>
+            <li><div class="release-row"><span><strong>2024</strong><br><span class="muted">Released the Velvet Signal EP and expanded live touring.</span></span></div></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>About page.</p>
+      <div class="socials">
+        <a href="music.html">Music</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="spacer-bottom"></div>
+
+  <div class="audio-dock">
+    <div class="audio-grid">
+      <div class="now-playing">
+        <div class="now-cover">
+          <img id="nowCover" src="Images/Bakshdo.jpg" alt="Current song cover" width="400" height="400">
+        </div>
+        <div class="marquee">
+          <strong id="nowTitle">BAKSH DO</strong>
+          <span id="nowArtist" class="muted">Abynx • Single</span>
+        </div>
+      </div>
+
+      <div class="player-center">
+        <div class="controls">
+          <button class="control-btn" id="prevBtn" aria-label="Previous track">⟨</button>
+          <button class="play-main" id="playBtn" aria-label="Play or pause">▶</button>
+          <button class="control-btn" id="nextBtn" aria-label="Next track">⟩</button>
+        </div>
+        <div class="timeline-wrap">
+          <span id="currentTime">0:00</span>
+          <input id="progress" class="range" type="range" min="0" max="100" value="0" aria-label="Track progress">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+
+      <div class="player-side">
+        <div class="volume-wrap">
+          <span aria-hidden="true">🔉</span>
+          <input id="volume" class="range" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+        </div>
+      </div>
+    </div>
+    <audio id="audio" class="hidden-audio" preload="metadata"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
