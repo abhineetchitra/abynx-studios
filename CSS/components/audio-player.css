@@ -226,3 +226,85 @@
 }
 
 }
+
+
+/* tab view */
+
+@media (min-width: 761px) and (max-width: 924px) {
+
+  /* Hide volume bar */
+  .player-side{
+    display: none;
+  }
+
+  /* Main dock */
+  /* .audio-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  } */
+
+  /* Put cover + track info + controls in one row */
+  .now-playing{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    position: relative;
+    padding-right: 110px; /* reserve space for controls */
+  }
+
+  /* Controls move to right */
+  .controls{
+    position: absolute;
+    right: 45px;
+    top: 38%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  /* Smaller buttons */
+
+
+
+  /* Smaller cover */
+  /* .now-cover{
+    width: 40px;
+    height: 40px;
+  } */
+
+  /* Remove extra gap from old center section */
+  /* .player-center{
+    display: contents;
+  } */
+
+  /* Timeline below */
+  .timeline-wrap{
+    margin-top: 0.3rem;
+  }
+  /* Track name container */
+.marquee{
+  min-width: 10;
+  overflow: hidden;
+}
+
+/* Song title */
+.marquee strong{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;  /* ... */
+  max-width: 80%;
+}
+
+/* Artist name */
+.marquee span{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+}
