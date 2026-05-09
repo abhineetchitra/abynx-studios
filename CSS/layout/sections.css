@@ -1,0 +1,19 @@
+.page-hero,
+.section {
+  padding: clamp(1.5rem, 3vw, 3rem) 0; 
+  /* padding: clamp(3rem, 6vw, 6rem) 0; */
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.section-subtitle {
+  color: var(--color-text-muted);
+  max-width: 60ch;
+  margin-top: 0.6rem;
+}

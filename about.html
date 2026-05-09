@@ -7,16 +7,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-label="Aria Vale logo">
-          <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="2"></circle>
-          <path d="M23 39c4-11 11-18 22-21-3 9-8 18-18 24-3 1-5 0-4-3Z" fill="currentColor"></path>
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="2"/>
+          <circle cx="32" cy="32" r="4" fill="currentColor"/>
+          <rect x="18" y="28" width="3" height="8" rx="2" fill="currentColor"/>
+          <rect x="24" y="24" width="3" height="16" rx="2" fill="currentColor"/>
+          <rect x="40" y="24" width="3" height="16" rx="2" fill="currentColor"/>
+          <rect x="46" y="28" width="3" height="8" rx="2" fill="currentColor"/>
         </svg>
         <span>Abynx</span>
       </a>
@@ -30,9 +34,9 @@
       </nav>
 
       <div class="header-actions">
-        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch color theme">
+        <!-- <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch color theme">
           <span aria-hidden="true">☼</span>
-        </button>
+        </button> -->
         <a class="btn btn-primary" href="contact.html">Book now</a>
       </div>
     </div>
@@ -43,16 +47,23 @@
       <div class="container two-col">
         <div class="panel hero-copy">
           <div>
-            <span class="eyebrow">About page</span>
-            <h1 class="display">The artist story, practice, and selected milestones.</h1>
+            <span class="eyebrow">About Abynx</span>
+            <h1 class="display">The artist story.</h1>
             <p class="lead">
-              About pages work best when they explain the artist clearly without overwhelming the visitor, so this version keeps the writing focused and visual.
+              What started as experimenting with beats, remixes, and late-night studio sessions slowly became something bigger. Music became more than a passion—it became a way to express emotions, experiences, and stories that words alone couldn't capture.
+<br><br>
+Through years of self-learning, experimentation, and consistency, his sound evolved, so did the vision. Abynx began blending raw rap vocals with melodic expression, guitar-driven energy, and cinematic production, creating music that feels both intense and deeply personal. His songs are inspired by real experiences—ambition, loneliness, heartbreak, pressure, self-doubt, and the constant drive to grow.
+
+<br><br>
+What started with remix culture and creative experiments slowly built into a growing audience of listeners who connected with the honesty behind the music. As his passion for rap grew stronger, Abynx moved beyond remixing to focus on creating original music—but the purpose remains the same:
+
+
             </p>
           </div>
         </div>
 
         <div class="hero-image">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Artist portrait in a warm natural-light setting" width="1200" height="1000" loading="lazy">
+          <img src="Images/IMG_20260228_133936529~3.jpg.jpeg" alt="Artist portrait in a warm natural-light setting" width="1200" height="1000" loading="lazy">
         </div>
       </div>
     </section>
@@ -62,11 +73,11 @@
         <article class="card">
           <h2 class="section-title">Artist bio</h2>
           <p class="section-subtitle">
-            Abynx is an independent artist blending alt-pop songwriting, ambient score work, and visual storytelling. Her projects move between studio releases, live sessions, stage direction, and collaborative audiovisual concepts.
+Abynx is an independent artist, songwriter, and music producer known for blending emotionally driven lyricism with powerful production. His sound combines rap, melody, live instrumentation, creating music that is both raw and immersive.
           </p>
           <ul class="list" style="margin-top:1rem;">
             <li>Based in New Delhi with remote collaborations across Europe and Southeast Asia.</li>
-            <li>Works across singles, film cues, visual campaigns, and live arrangements.</li>
+            <li>Works across singles, visual campaigns, and live arrangements.</li>
             <li>Available for booking, soundtrack work, and creative direction projects.</li>
           </ul>
         </article>
@@ -74,9 +85,11 @@
         <article class="card">
           <h2 class="section-title">Milestones</h2>
           <ul class="list" style="margin-top:1rem;">
-            <li><div class="release-row"><span><strong>2026</strong><br><span class="muted">Released Afterlight and launched new live session visuals.</span></span></div></li>
-            <li><div class="release-row"><span><strong>2025</strong><br><span class="muted">Scored an installation film and completed two brand collaborations.</span></span></div></li>
-            <li><div class="release-row"><span><strong>2024</strong><br><span class="muted">Released the Velvet Signal EP and expanded live touring.</span></span></div></li>
+            <li><div class="release-row"><span><strong>2024</strong><br><span class="muted">Reached 15M+ total views across music content.</span></span></div></li>
+            <li><div class="release-row"><span><strong>2025</strong><br><span class="muted">Built a community of 55K+ subscribers.</span></span></div></li>
+            <li><div class="release-row"><span><strong>2026</strong><br><span class="muted">Released original music, remixes, and collaborations.</span></span></div></li>
+            <li><div class="muted">Developed a signature sound blending rap, melody, and cinematic production.</span></span></div></li>
+            <li><div class="muted">Continues to grow as an independent artist, producer, and performer.</span></span></div></li>
           </ul>
         </article>
       </div>
@@ -85,7 +98,7 @@
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <p>About page.</p>
+      <p>Abynx &#10084</p>
       <div class="socials">
         <a href="music.html">Music</a>
         <a href="portfolio.html">Portfolio</a>

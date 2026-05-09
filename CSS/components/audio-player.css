@@ -1,0 +1,228 @@
+.audio-dock {
+  position: fixed;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  width: min(calc(100% - 1rem), 1060px);
+  z-index: 40;
+  background: color-mix(in srgb, var(--color-surface) 86%, transparent);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-xl);
+  padding: 0.9rem 1rem;
+}
+
+.audio-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr auto;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.now-playing {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 0;
+}
+
+
+.now-cover {
+  width: 58px;
+  height: 58px;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--color-surface-offset);
+}
+
+.now-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marquee {
+  min-width: 0;
+}
+
+.marquee strong,
+.marquee span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.player-center {
+  display: grid;
+  gap: 0.7rem;
+}
+
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.control-btn,
+.play-main {
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+}
+
+.play-main {
+  width: 52px;
+  height: 52px;
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: transparent;
+}
+
+.timeline-wrap {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(
+    to right,
+    var(--color-primary) 0%,
+    var(--color-primary) var(--progress, 0%),
+    var(--color-surface-offset) var(--progress, 0%),
+    var(--color-surface-offset) 100%
+  );
+  outline: none;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 0;
+}
+
+
+.player-side {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-width: 180px;
+  justify-content: end;
+}
+
+.volume-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 120px;
+}
+
+.hidden-audio {
+  display: none;
+}
+
+.spacer-bottom {
+  height: 7rem;
+}
+
+/* for mobile view */
+
+@media (max-width: 760px) {
+
+  /* Hide volume bar */
+  .player-side{
+    display: none;
+  }
+
+  /* Main dock */
+  /* .audio-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  } */
+
+  /* Put cover + track info + controls in one row */
+  .now-playing{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    position: relative;
+    padding-right: 110px; /* reserve space for controls */
+  }
+
+  /* Controls move to right */
+  .controls{
+    position: absolute;
+    right: 45px;
+    top: 38%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  /* Smaller buttons */
+
+
+
+  /* Smaller cover */
+  /* .now-cover{
+    width: 40px;
+    height: 40px;
+  } */
+
+  /* Remove extra gap from old center section */
+  /* .player-center{
+    display: contents;
+  } */
+
+  /* Timeline below */
+  .timeline-wrap{
+    margin-top: 0.3rem;
+  }
+  /* Track name container */
+.marquee{
+  min-width: 10;
+  overflow: hidden;
+}
+
+/* Song title */
+.marquee strong{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;  /* ... */
+  max-width: 80%;
+}
+
+/* Artist name */
+.marquee span{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+}

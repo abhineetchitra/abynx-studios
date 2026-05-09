@@ -1,0 +1,20 @@
+.display,
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.section-title {
+  font-size: var(--text-2xl);
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.lead {
+  color: var(--color-text-muted);
+}

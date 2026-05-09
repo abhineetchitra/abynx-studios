@@ -1,0 +1,71 @@
+:root, [data-theme="light"] {
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --text-3xl: clamp(2.75rem, 1rem + 4vw, 5rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  --color-bg: #f7f3ee;
+  --color-surface: #fbf8f3;
+  --color-surface-2: #ffffff;
+  --color-surface-offset: #eee7de;
+  --color-border: rgba(35,31,26,0.12);
+  --color-divider: rgba(35,31,26,0.08);
+  --color-text: #231f1a;
+  --color-text-muted: #6f6a63;
+  --color-text-faint: #978f88;
+  --color-text-inverse: #f8f4ef;
+  --color-primary: #8f4038;
+  --color-primary-hover: #6f2d27;
+  --color-primary-soft: rgba(143,64,56,0.12);
+
+  --shadow-sm: 0 1px 2px rgba(31,24,19,0.08);
+  --shadow-md: 0 14px 30px rgba(31,24,19,0.10);
+  --shadow-lg: 0 20px 60px rgba(31,24,19,0.14);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-full: 9999px;
+
+  --content-wide: 1180px;
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+  --color-bg: #141110;
+  --color-surface: #1b1715;
+  --color-surface-2: #221d1a;
+  --color-surface-offset: #2a2420;
+  --color-border: rgba(245,236,226,0.10);
+  --color-divider: rgba(245,236,226,0.08);
+  --color-text: #f3ede5;
+  --color-text-muted: #c4bbb0;
+  --color-text-faint: #8f867d;
+  --color-text-inverse: #171310;
+  --color-primary: #d68477;
+  --color-primary-hover: #e2a195;
+  --color-primary-soft: rgba(214,132,119,0.12);
+
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.18);
+  --shadow-md: 0 14px 32px rgba(0,0,0,0.24);
+  --shadow-lg: 0 24px 70px rgba(0,0,0,0.34);
+}

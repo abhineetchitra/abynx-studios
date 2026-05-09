@@ -7,16 +7,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <svg class="brand-mark" viewBox="0 0 64 64" fill="none">
-          <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="2"></circle>
-          <path d="M23 39c4-11 11-18 22-21-3 9-8 18-18 24-3 1-5 0-4-3Z" fill="currentColor"></path>
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="2"/>
+          <circle cx="32" cy="32" r="4" fill="currentColor"/>
+          <rect x="18" y="28" width="3" height="8" rx="2" fill="currentColor"/>
+          <rect x="24" y="24" width="3" height="16" rx="2" fill="currentColor"/>
+          <rect x="40" y="24" width="3" height="16" rx="2" fill="currentColor"/>
+          <rect x="46" y="28" width="3" height="8" rx="2" fill="currentColor"/>
         </svg>
         <span>Abynx</span>
       </a>
@@ -30,9 +34,9 @@
       </nav>
 
       <div class="header-actions">
-        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch color theme">
+        <!-- <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch color theme">
           <span aria-hidden="true">☼</span>
-        </button>
+        </button> -->
         <a class="btn btn-primary" href="contact.html">Book now</a>
       </div>
     </div>
@@ -44,36 +48,42 @@
         <article class="panel hero-copy">
           <div>
             <span class="eyebrow">Contact page</span>
-            <h1 class="display">Booking, press, collaborations, and project inquiries.</h1>
+            <h1 class="display">Artist support, collaborations, and creative partnerships.</h1>
             <p class="lead">
-              A dedicated contact page makes the final action clear and gives promoters, collaborators, and press one focused place to reach out.
-            </p>
-            <div class="socials">
+Built for supporters, collaborators, and everyone who believes in the journey. Whether you want to support upcoming music, contribute to future releases, explore creative collaborations, or become part of the vision behind the art—this is the place to connect and help shape the next chapter of Abynx’s story.            </p>
+            <!-- <div class="socials">
               <a class="btn btn-secondary" href="https://spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a>
               <a class="btn btn-secondary" href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
               <a class="btn btn-secondary" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
+            </div> -->
           </div>
         </article>
 
         <article class="contact-card">
-          <form class="contact-form" id="contactForm">
+          <form
+  action="https://formspree.io/f/mrejoznr"
+  method="POST"
+  >
+
+          
             <div class="field">
               <label for="name">Name</label>
+              
               <input id="name" name="name" type="text" placeholder="Your name" required />
+              <br>
             </div>
 
             <div class="field">
               <label for="email">Email</label>
               <input id="email" name="email" type="email" placeholder="name@example.com" required />
             </div>
-
+            <br>
             <div class="field">
-              <label for="message">Project details</label>
-              <textarea id="message" name="message" placeholder="Tell me about the collaboration, performance, or campaign."></textarea>
+              <label for="message">Enquiry details</label>
+              <textarea id="message" name="message" placeholder="Tell me about the collaboration, performance, or campaign." rows="8"></textarea>
             </div>
-
-            <button class="btn btn-primary" type="submit">Send inquiry</button>
+            <br>
+            <button class="btn btn-primary" type="submit">Send enquiry</button>
             <p class="tiny" id="formStatus" aria-live="polite"></p>
           </form>
         </article>
@@ -85,17 +95,34 @@
         <article class="card">
           <h2 class="section-title">Direct details</h2>
           <ul class="list" style="margin-top:1rem;">
-            <li>Booking: booking@abynx.example</li>
-            <li>Press: press@abynx.example</li>
-            <li>Base: New Delhi, India</li>
+            <li>Mail Here: abynxmusic@gmail.com</li>
+            <li>Base: Noida, India</li>
+            <li>Collaborations: Artists, Producers, Brands, Content Creators</li>
+            <li>Creative Work: Music Videos, Commercial Campaigns, Sound Design</li>
+            <div class="socials">
+              <a class="btn btn-secondary" href="https://open.spotify.com/artist/0SawNbD7meFH3omsyhyX4H?nd=1&dlsi=1ae40484af494e62" target="_blank" rel="noopener noreferrer">Spotify</a>
+              <a class="btn btn-secondary" href="https://www.youtube.com/@abynxx" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a class="btn btn-secondary" href="https://instagram.com/abynxmusic" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
           </ul>
         </article>
 
         <article class="card">
-          <h2 class="section-title">Best use</h2>
+          <h2 class="section-title">Support Me &#9786;</h2>
           <p class="section-subtitle">
-            Use this page for live bookings, soundtrack commissions, interviews, and visual collaboration requests.
+             If my music inspires you, you can support independent art here.
           </p>
+
+          <section class="support-section">
+  <!-- QR Image -->
+  <img src="Images/Contact Page/qrcode.png" alt="UPI QR Code" class="qr-code" height="200" width="200" >
+
+  <!-- UPI ID -->
+  <p class="upi-id">UPI ID: abhineet.chitra@superyes</p>
+
+</section>
+
+
         </article>
       </div>
     </section>
@@ -103,7 +130,7 @@
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <p>Contact page.</p>
+      <p>Abynx &#10084</p>
       <div class="socials">
         <a href="music.html">Music</a>
         <a href="portfolio.html">Portfolio</a>

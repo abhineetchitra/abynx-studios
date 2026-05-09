@@ -1,0 +1,44 @@
+.card{
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    background-color: #2a1d1a; /* hover color */
+    border-color: #d88b75;     /* optional border color */
+    transform: translateY(-5px); /* optional lift effect */
+}
+
+.hero-copy{
+    transition: all 0.3s ease;
+}
+
+.hero-copy:hover{
+    background-color: #2a1d1a; /* hover color */
+    border-color: #d88b75;     /* optional border color */
+    transform: translateY(-5px);
+}
+
+.hero-image{
+    transition: all 0.3s ease;
+}
+
+.hero-image:hover{
+    background-color: #2a1d1a; /* hover color */
+    border-color: #d88b75;     /* optional border color */
+    transform: translateY(-5px);
+    border-color: #d88b75;
+    box-shadow: 0 0 10px rgba(216, 139, 117, 4),
+                0 0 20px rgba(216, 139, 117, 2);
+}
+
+.track-card{
+    transition: all 0.3s ease;
+}
+
+.track-card:hover{
+    background-color: #2a1d1a; /* hover color */
+    border-color: #d88b75;     /* optional border color */
+    transform: translateY(-5px); /* optional lift effect */
+}
+
+

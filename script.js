@@ -7,18 +7,50 @@ const tracks = [
     src: "Audios/BAKSHDOmastered2.wav"
   },
   {
-    title: 'Glass Room',
-    artist: 'Aria Vale • Visual score',
-    duration: '2:58',
-    cover: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=400&q=80',
-    src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'
+    title: 'Sometimes You Still Lose',
+    artist: 'Abynx, Rayz0r',
+    duration: '2:44',
+    cover: 'Images/SometimesYouStillLose.jpg',
+    src: 'Audios/SometimesYouStillLose.wav'
   },
   {
-    title: 'Neon Thread',
-    artist: 'Aria Vale • Collaboration',
-    duration: '3:41',
-    cover: 'https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=400&q=80',
-    src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3'
+    title: 'Sahar',
+    artist: 'Abynx • Single',
+    duration: '2:11',
+    cover: 'Images/sahar.jpg',
+    src: 'Audios/Sahar.flac'
+  }
+  ,
+  {
+    title: 'Kabhi Alvida Na Kehna',
+    artist: 'Abynx • Single',
+    duration: '2:24',
+    cover: 'Images/Kabhi Alvida Na Kehna .jpg',
+    src: 'Audios/Kabhi Alvida Na Kehna (mastered).wav'
+  }
+  ,
+  {
+    title: "eyes don't lie",
+    artist: 'Abynx • Single',
+    duration: '1:20',
+    cover: "Images/eyes don't lie.png",
+    src: "Audios/eyes don't lie.wav"
+  }
+  ,
+  {
+    title: 'WordShot',
+    artist: 'Abynx • Single',
+    duration: '1:52',
+    cover: 'Images/WordShot.jpg',
+    src: 'Audios/WordShotmastered.wav'
+  }
+  ,
+  {
+    title: 'Khandani Khoobsurati',
+    artist: 'Abynx • Single',
+    duration: '1:59',
+    cover: 'Images/Khandani Khoobsurati.jpg',
+    src: 'Audios/Khandani Khoobsurati.mp3'
   }
 ];
 
@@ -137,16 +169,16 @@ if (volume) {
   updateRangeBackground(volume, 80);
 }
 
-if (themeToggle) {
-  themeToggle.addEventListener('click', () => {
-    const root = document.documentElement;
-    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    themeToggle.innerHTML = next === 'dark'
-      ? '<span aria-hidden="true">☼</span>'
-      : '<span aria-hidden="true">☾</span>';
-  });
-}
+// if (themeToggle) {
+//   themeToggle.addEventListener('click', () => {
+//     const root = document.documentElement;
+//     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+//     root.setAttribute('data-theme', next);
+//     themeToggle.innerHTML = next === 'dark'
+//       ? '<span aria-hidden="true">☼</span>'
+//       : '<span aria-hidden="true">☾</span>';
+//   });
+// }
 
 if (form) {
   const formStatus = document.getElementById('formStatus');

@@ -1,0 +1,14 @@
+.page-hero-grid,
+.two-col,
+.contact-grid,
+.release-grid,
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.span-7 { grid-column: span 7; }
+.span-5 { grid-column: span 5; }
+.span-8 { grid-column: span 8; }
+.span-4 { grid-column: span 4; }

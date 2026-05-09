@@ -1,0 +1,23 @@
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-4);
+}
+
+
+
+.work-card{
+    transition: all 0.3s ease;
+}
+
+.work-card:hover{
+    background-color: #2a1d1a; 
+    border-color: #d88b75;     
+    transform: translateY(-5px);
+    border-color: #d88b75;
+    box-shadow: 0 0 10px rgba(216, 139, 117, 4),
+                0 0 20px rgba(216, 139, 117, 2);
+}
+
+
+
