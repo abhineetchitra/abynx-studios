@@ -4,21 +4,21 @@ const tracks = [
     artist: 'Abynx • Single',
     duration: '1:31',
     cover: "Images/Bakshdo.jpg",
-    src: "Audios/BAKSHDOmastered2.wav"
+    src: "Audios/BAKSH DO (mastered).mp3"
   },
   {
     title: 'Sometimes You Still Lose',
     artist: 'Abynx, Rayz0r',
-    duration: '2:44',
+    duration: '2:45',
     cover: 'Images/SometimesYouStillLose.jpg',
-    src: 'Audios/SometimesYouStillLose.wav'
+    src: 'Audios/Sometimes You Still Lose.mp3'
   },
   {
     title: 'Sahar',
     artist: 'Abynx • Single',
     duration: '2:11',
     cover: 'Images/sahar.jpg',
-    src: 'Audios/Sahar.flac'
+    src: 'Audios/Sahar.mp3'
   }
   ,
   {
@@ -26,15 +26,15 @@ const tracks = [
     artist: 'Abynx • Single',
     duration: '2:24',
     cover: 'Images/Kabhi Alvida Na Kehna .jpg',
-    src: 'Audios/Kabhi Alvida Na Kehna (mastered).wav'
+    src: 'Audios/Kabhi Alvida Na Kehna.mp3'
   }
   ,
   {
     title: "eyes don't lie",
     artist: 'Abynx • Single',
-    duration: '1:20',
+    duration: '1:32',
     cover: "Images/eyes don't lie.png",
-    src: "Audios/eyes don't lie.wav"
+    src: "Audios/eyes dont lie.mp3"
   }
   ,
   {
@@ -42,7 +42,7 @@ const tracks = [
     artist: 'Abynx • Single',
     duration: '1:52',
     cover: 'Images/WordShot.jpg',
-    src: 'Audios/WordShotmastered.wav'
+    src: 'Audios/Word Shot (mastered).mp3'
   }
   ,
   {
